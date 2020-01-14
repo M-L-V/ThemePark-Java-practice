@@ -40,4 +40,8 @@ public class PlaygroundTest {
         assertEquals(true, playground.isAllowedTo(visitor1));
     }
 
+    @Test
+    public void overFifteenCannotPlay(){
+        assertEquals(false, playground.isAllowedTo(visitor2));
+    }
 }
