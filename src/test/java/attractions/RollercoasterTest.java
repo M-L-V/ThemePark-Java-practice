@@ -61,4 +61,5 @@ public class RollercoasterTest {
     public void doesNotLetUnacceptableVisitorRide(){
         assertEquals(false, rollerCoaster.isAllowed(visitor3) );
     }
+
 }
