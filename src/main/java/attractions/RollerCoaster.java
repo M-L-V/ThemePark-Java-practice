@@ -13,7 +13,11 @@ public class RollerCoaster extends Attraction implements ITicketed {
         return 8.40;
     }
 
-    public double priceFor(Visitor data) {
-        return this.defaultPrice() * 2;
+    public double priceFor(Visitor visitor) {
+        if (visitor.getHeight() > 2.0) {
+            return 16.80;
+        }
+        return defaultPrice();
     }
+
 }
